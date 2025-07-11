@@ -29,7 +29,12 @@ pip install -r requirements.txt
 - Buat database MySQL dengan nama `destinasi_db`
 - Copy file `.env.example` ke `.env` dan sesuaikan konfigurasi database
 
-4. **Jalankan Server**
+4. **Migrasi Database**
+```bash
+python migration.py
+```
+
+5. **Jalankan Server**
 ```bash
 uvicorn main:app --reload
 ```
